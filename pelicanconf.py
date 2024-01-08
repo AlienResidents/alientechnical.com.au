@@ -9,7 +9,7 @@ SITEURL = ""
 #SITEURL = "https://alientechnical.com.au"
 
 #SITESUBTITLE = "Web Developer"
-SITEDESCRIPTION = "Foo Bar's Thoughts and Writings"
+SITEDESCRIPTION = "Alien Technical News and Blog"
 SITELOGO = SITEURL + "/images/site-logo.png"
 FAVICON = SITEURL + "/images/favicon.ico"
 
