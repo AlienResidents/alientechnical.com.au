@@ -49,20 +49,21 @@
  
 
 <meta name="author" content="Chrispy" />
-<meta name="description" content="Stuff #!/bin/bash declare result retval server declare -a servers mapfile -t servers &lt; &lt;(grep -Ev &#39;^#|^$&#39; &#34;${HOME}&#34;/git/github/alienresidents/dotfiles/tings.txt) echo -e &#34;Starting apt upgrades...&#34; for server in &#34;${servers[@]}&#34; do echo -e &#34;================================== Upgrading \&#34;${server}\&#34; ==================================&#34; ping -c 1 &#34;${server}&#34; &amp;&gt; /dev/null retval=$? if [[ ${retval} = 0 ]]; then result=$(ssh root …" />
-<meta name="keywords" content="">
+<meta name="description" content="Alien Technical is now live, and trading." />
+<meta name="keywords" content="alientechnical">
 
 
   <meta property="og:site_name" content="Alien Technical Consulting"/>
   <meta property="og:title" content="Alien Technical"/>
-  <meta property="og:description" content="Stuff #!/bin/bash declare result retval server declare -a servers mapfile -t servers &lt; &lt;(grep -Ev &#39;^#|^$&#39; &#34;${HOME}&#34;/git/github/alienresidents/dotfiles/tings.txt) echo -e &#34;Starting apt upgrades...&#34; for server in &#34;${servers[@]}&#34; do echo -e &#34;================================== Upgrading \&#34;${server}\&#34; ==================================&#34; ping -c 1 &#34;${server}&#34; &amp;&gt; /dev/null retval=$? if [[ ${retval} = 0 ]]; then result=$(ssh root …"/>
+  <meta property="og:description" content="Alien Technical is now live, and trading."/>
   <meta property="og:locale" content="en_GB"/>
   <meta property="og:url" content="/alien-technical.html"/>
   <meta property="og:type" content="article"/>
-  <meta property="article:published_time" content="2010-12-03 10:20:00+11:00"/>
+  <meta property="article:published_time" content="2023-02-01 15:20:00+11:00"/>
   <meta property="article:modified_time" content=""/>
   <meta property="article:author" content="/author/chrispy.html">
-  <meta property="article:section" content="Blog"/>
+  <meta property="article:section" content="News"/>
+  <meta property="article:tag" content="alientechnical"/>
   <meta property="og:image" content="/images/site-logo.png">
 
   <title>Alien Technical Consulting &ndash; Alien Technical</title>
@@ -125,8 +126,9 @@ rel="me"           href="mailto:chrispy@alientechnical.com.au"
 <nav>
   <a href="/">Home</a>
 
-  <a href="/categories.html">Categories</a>
+  <a href="/services.html">Services</a>
   <a href="/tags.html">Tags</a>
+  <a href="/categories.html">Categories</a>
   <a href="/archives.html">Archives</a>
 
 
@@ -137,90 +139,19 @@ rel="me"           href="mailto:chrispy@alientechnical.com.au"
       
     <h1 id="alien-technical">Alien Technical</h1>
     <p>
-      Posted on 2010/12/03 in <a href="/category/blog.html">Blog</a>
+      Posted on 2023/02/01 in <a href="/category/news.html">News</a>
 
     </p>
   </header>
 
 
   <div>
-    <p>Stuff</p>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+    <p>Alien Technical is now live, and trading.</p>
 
-<span class="nb">declare</span><span class="w"> </span>result<span class="w"> </span>retval<span class="w"> </span>server
-<span class="nb">declare</span><span class="w"> </span>-a<span class="w"> </span>servers
-
-mapfile<span class="w"> </span>-t<span class="w"> </span>servers<span class="w"> </span>&lt;<span class="w"> </span>&lt;<span class="o">(</span>grep<span class="w"> </span>-Ev<span class="w"> </span><span class="s1">&#39;^#|^$&#39;</span><span class="w">  </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span><span class="s2">&quot;</span>/git/github/alienresidents/dotfiles/tings.txt<span class="o">)</span>
-
-<span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;Starting apt upgrades...&quot;</span>
-<span class="k">for</span><span class="w"> </span>server<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">servers</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">do</span>
-<span class="w">  </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;================================== Upgrading \&quot;</span><span class="si">${</span><span class="nv">server</span><span class="si">}</span><span class="s2">\&quot; ==================================&quot;</span>
-<span class="w">  </span>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">server</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">&amp;</span>&gt;<span class="w"> </span>/dev/null
-<span class="w">  </span><span class="nv">retval</span><span class="o">=</span><span class="nv">$?</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="si">${</span><span class="nv">retval</span><span class="si">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">    </span><span class="nv">result</span><span class="o">=</span><span class="k">$(</span>ssh<span class="w"> </span>root@<span class="s2">&quot;</span><span class="si">${</span><span class="nv">server</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;TERM=vt100 apt --allow-releaseinfo-change update &amp;&amp; apt -o Dpkg::Options::=\&quot;--force-confold\&quot; -y --purge --autoremove upgrade&quot;</span><span class="w"> </span>&lt;<span class="w"> </span>/dev/null<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="k">)</span>
-<span class="w">    </span><span class="nv">retval</span><span class="o">=</span><span class="nv">$?</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="si">${</span><span class="nv">retval</span><span class="si">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">      </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;Upgrade successful (</span><span class="si">${</span><span class="nv">server</span><span class="si">}</span><span class="s2">)&quot;</span>
-<span class="w">    </span><span class="k">else</span>
-<span class="w">      </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;Updated Failed (</span><span class="si">${</span><span class="nv">server</span><span class="si">}</span><span class="s2">):&quot;</span>
-<span class="w">      </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">result</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="w">    </span><span class="k">fi</span>
-<span class="w">  </span><span class="k">fi</span>
-<span class="k">done</span>
-<span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;Finished apt upgrades.&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>sensors
-nouveau-pci-0200
-Adapter: PCI adapter
-fan1:         931 RPM
-temp1:        +38.0°C  (high = +95.0°C, hyst =  +3.0°C)
-                       (crit = +105.0°C, hyst =  +5.0°C)
-                       (emerg = +135.0°C, hyst =  +5.0°C)
-
-corsairpsu-hid-3-b
-Adapter: HID adapter
-v_in:        230.00 V  
-v_out +12v:   12.06 V  (crit min =  +8.41 V, crit max = +15.59 V)
-v_out +5v:     5.01 V  (crit min =  +3.50 V, crit max =  +6.50 V)
-v_out +3.3v:   3.31 V  (crit min =  +2.31 V, crit max =  +4.30 V)
-psu fan:        0 RPM
-vrm temp:     +41.2°C  (crit = +70.0°C)
-case temp:    +30.5°C  (crit = +70.0°C)
-power total:  86.00 W  
-power +12v:   68.00 W  
-power +5v:    15.00 W  
-power +3.3v:   4.00 W  
-curr +12v:     5.25 A  (crit max = +85.00 A)
-curr +5v:      3.06 A  (crit max = +40.00 A)
-curr +3.3v:    1.25 A  (crit max = +40.00 A)
-
-acpitz-acpi-0
-Adapter: ACPI interface
-temp1:        +27.8°C  (crit = +119.0°C)
-temp2:        +29.8°C  (crit = +119.0°C)
-
-coretemp-isa-0000
-Adapter: ISA adapter
-Package id 0:  +37.0°C  (high = +84.0°C, crit = +100.0°C)
-Core 0:        +34.0°C  (high = +84.0°C, crit = +100.0°C)
-Core 1:        +37.0°C  (high = +84.0°C, crit = +100.0°C)
-Core 2:        +37.0°C  (high = +84.0°C, crit = +100.0°C)
-Core 3:        +35.0°C  (high = +84.0°C, crit = +100.0°C)
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code> linnie  /home/cdd/testing/pelican/content/images  kube.l.cdd.net.au  default    
- cdd   ls -l
-total 68
--rw-rw-r-- 1 cdd cdd 67646 Jan  8 17:48 favicon.ico
- linnie  /home/cdd/testing/pelican/content/images  kube.l.cdd.net.au  default    
- cdd  
-</code></pre></div>
   </div>
   <div class="tag-cloud">
     <p>
+      <a href="/tag/alientechnical.html">alientechnical</a>
     </p>
   </div>
 

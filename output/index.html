@@ -118,8 +118,9 @@ rel="me"           href="mailto:chrispy@alientechnical.com.au"
 <nav>
   <a href="/">Home</a>
 
-  <a href="/categories.html">Categories</a>
+  <a href="/services.html">Services</a>
   <a href="/tags.html">Tags</a>
+  <a href="/categories.html">Categories</a>
   <a href="/archives.html">Archives</a>
 
 
@@ -129,33 +130,41 @@ rel="me"           href="mailto:chrispy@alientechnical.com.au"
 
 <article>
   <header>
-    <h2><a href="/alien-technical.html#alien-technical">Alien Technical</a></h2>
+    <h2><a href="/contractingconsulting-services-available.html">Contracting/Consulting Services Available</a></h2>
     <p>
-      Posted on 2010/12/03 in <a href="/category/blog.html">Blog</a>
+      Posted on 2023/02/01 in <a href="/category/news.html">News</a>
 
-
+          &#8226; Tagged with
+              <a href="/tag/alientechnical.html">alientechnical</a>,              <a href="/tag/services.html">services</a>,              <a href="/tag/devops.html">devops</a>,              <a href="/tag/devsecops.html">devsecops</a>,              <a href="/tag/sre.html">sre</a>,              <a href="/tag/platform-engineering.html">platform engineering</a>,              <a href="/tag/finops.html">finops</a>
     </p>
   </header>
   <div>
-      <div><p>Stuff</p>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
-
-<span class="nb">declare</span><span class="w"> </span>result<span class="w"> </span>retval<span class="w"> </span>server
-<span class="nb">declare</span><span class="w"> </span>-a<span class="w"> </span>servers
-
-mapfile<span class="w"> </span>-t<span class="w"> </span>servers<span class="w"> </span>&lt;<span class="w"> </span>&lt;<span class="o">(</span>grep<span class="w"> </span>-Ev<span class="w"> </span><span class="s1">&#39;^#|^$&#39;</span><span class="w">  </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span><span class="s2">&quot;</span>/git/github/alienresidents/dotfiles/tings.txt<span class="o">)</span>
-
-<span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;Starting apt upgrades...&quot;</span>
-<span class="k">for</span><span class="w"> </span>server<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">servers</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">do</span>
-<span class="w">  </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;================================== Upgrading \&quot;</span><span class="si">${</span><span class="nv">server</span><span class="si">}</span><span class="s2">\&quot; ==================================&quot;</span>
-<span class="w">  </span>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">server</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">&amp;</span>&gt;<span class="w"> </span>/dev/null
-<span class="w">  </span><span class="nv">retval</span><span class="o">=</span><span class="nv">$?</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="si">${</span><span class="nv">retval</span><span class="si">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">    </span><span class="nv">result</span><span class="o">=</span><span class="k">$(</span>ssh<span class="w"> </span>root …</code></pre></div></div>
+      <div><p class="first last">Services Offered</p>
+</div>
         <br>
         <a class="btn"
-           href="/alien-technical.html#alien-technical">
+           href="/contractingconsulting-services-available.html">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="/alien-technical.html">Alien Technical</a></h2>
+    <p>
+      Posted on 2023/02/01 in <a href="/category/news.html">News</a>
+
+          &#8226; Tagged with
+              <a href="/tag/alientechnical.html">alientechnical</a>
+    </p>
+  </header>
+  <div>
+      <div><p class="first last">Alien Technical is now live, and trading.</p>
+</div>
+        <br>
+        <a class="btn"
+           href="/alien-technical.html">
           Continue reading
         </a>
   </div>

@@ -22,12 +22,15 @@ DATE_FORMATS = {
     "en": "%Y/%m/%d",
 }
 
+DISABLE_URL_HASH = True
+
 COPYRIGHT_YEAR = datetime.now().year
 ROBOTS = "index, follow"
 MAIN_MENU = True
 MENUITEMS = (
-    ("Categories", "/categories.html"),
+    ("Services", "/services.html"),
     ("Tags", "/tags.html"),
+    ("Categories", "/categories.html"),
     ("Archives", "/archives.html"),
 )
 
