@@ -67,6 +67,7 @@ devserver-global:
 
 publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
+	gcloud storage rsync output/ gs://alientechnical.com.au --recursive --delete-unmatched-destination-objects
 
 
 .PHONY: html help clean regenerate serve serve-global devserver devserver-global publish 
